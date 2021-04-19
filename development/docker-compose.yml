@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  biproadapter-norm426service-template:
+    build: ../../norm426-application-template
+    environment:
+#     This parameter replaces the URL in the WSDL and has to match the server-URL
+#     - BIPROADAPTER_PROVIDER_COMMON_GENERICSTANDARDADAPTER_WSDL_SCHEMALOCATIONURL=example.com/soap-api/SecurityTokenService_2.7.0.1.0
+      - JAVA_OPTS=
+        -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+        -Dlogging.config=classpath:development-logback-spring.xml
+    ports:
+      - "8080:8080"
+      - "5005:5005"

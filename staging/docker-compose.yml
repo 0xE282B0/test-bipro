@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+
+  biproadapter-norm426service-template:
+    image: ${DOCKER_REPOSITORY}/biproadapter-norm426service-template:latest
+#    environment:
+#     This parameter replaces the URL in the WSDL and has to match the server-URL
+#     - BIPROADAPTER_PROVIDER_COMMON_GENERICSTANDARDADAPTER_WSDL_SCHEMALOCATIONURL=example.com/soap-api/SecurityTokenService_2.7.0.1.0
+    ports:
+      - "${STAGING_PORT}:8080"
+    networks:
+      bipro_net:
+        ipv4_address: 172.49.26.2
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: ${FLUENTD_HOST}:24224
+        tag: norm426-template
+
+networks:
+  bipro_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.49.26.0/24

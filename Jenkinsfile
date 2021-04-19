@@ -64,6 +64,7 @@ pipeline {
             sh """
              
              echo ' Before Executing Script #########'
+             ls
              sh './fnstall-fincon-modules.sh'
              
              echo 'First Deployment Ever #########'
@@ -71,7 +72,7 @@ pipeline {
                         
              
              echo 'After Maven Build #########'
-             cd /docker-compose/development
+             cd /development
              docker-compose up --build --force-recreate
              
              
