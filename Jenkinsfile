@@ -66,7 +66,7 @@ pipeline {
              // cp allianz_ca.der build/docker
              
              sh './fnstall-fincon-modules.sh'
-             mvn clean install build
+             mvn clean compile install
              cd /docker-compose/development
              docker-compose up --build --force-recreate
              
