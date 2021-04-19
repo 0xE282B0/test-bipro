@@ -1,0 +1,46 @@
+# Source: belt-api/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: RELEASE-NAME-bipro-adapter
+  labels:
+    app: bipro-adapter
+    chart: bipro-adapter-0.1.0
+    heritage: Helm
+spec:
+  selector:
+    matchLabels:
+      app: bipro-adapter
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bipro-adapter
+    spec:
+      imagePullSecrets:
+        - name: grnry-dockerregistry-credentials
+      containers:
+      - name: your-app-name-here
+        image: "hub.syncier.cloud/grnry/biPro-Adapter:0.1.0"
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: 250m
+            memory: 1Gi
+          requests:
+            cpu: 50m
+            memory: 256Mi
+        livenessProbe:
+          failureThreshold: 10
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          periodSeconds: 60
+          timeoutSeconds: 10
+        readinessProbe:
+          failureThreshold: 10
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          periodSeconds: 60
+          timeoutSeconds: 10

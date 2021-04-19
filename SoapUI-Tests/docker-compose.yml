@@ -1,0 +1,31 @@
+version: "3.5"
+
+volumes:
+  mvn-m2-test-volume:
+    name: mvn-m2-test-volume
+    external: true
+
+services:
+
+  biproconnect-norm426-template:
+    build: ../norm426-application-template
+    environment:
+      - JAVA_OPTS=
+        -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+        -Dlogging.config=classpath:development-logback-spring.xml
+    networks:
+      - soap-ui-norm426-network       
+      
+  soap-ui-testsuite-norm426:
+    build: .
+    depends_on: 
+        - biproconnect-norm426-template
+    volumes:
+      - mvn-m2-test-volume:/root
+    command: /opt/apps/soap-ui-tests/wait-for-it.sh -t 30 biproconnect-norm426-template:8080 -- mvn test -f /opt/apps/soap-ui-tests/pom.xml
+    networks:
+      - soap-ui-norm426-network       
+
+
+networks:
+  soap-ui-norm426-network:

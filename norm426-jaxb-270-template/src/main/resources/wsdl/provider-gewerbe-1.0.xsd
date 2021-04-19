@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:nachr="http://www.bipro.net/namespace/nachrichten"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:provider="http://www.provider.de/namespace"
+            xmlns="http://www.provider.de/namespace"
+            xmlns:bipro="http://www.bipro.net/namespace"
+            xmlns:allg="http://www.bipro.net/namespace/allgemein"
+            xmlns:dt="http://www.bipro.net/namespace/datentypen"
+            targetNamespace="http://www.provider.de/namespace"
+            elementFormDefault="qualified"
+            attributeFormDefault="qualified"
+            bipro:Name="provider-gewerbe-1.0.xsd"
+            bipro:Version="1.0">
+   <!-- Hier werden alle BiPRO-Modelle importiert, deren Objekte bzw. Datentypen erweitert werden sollen. -->
+   <xsd:import namespace="http://www.bipro.net/namespace/datentypen"
+               schemaLocation="../BiPRO-Schemas/bipro-datentypen-2.7.1.xsd"/>
+   <xsd:import namespace="http://www.bipro.net/namespace/nachrichten"
+               schemaLocation="../BiPRO-Schemas/bipro-nachrichten-2.7.1.xsd"/>
+   <xsd:import namespace="http://www.bipro.net/namespace/allgemein"
+               schemaLocation="../BiPRO-Schemas/bipro-allgemein-2.7.1.xsd"/>
+   <!-- Hier werden VU-spezifische Objekte, Datentypen sowie Erweiterungen an BiPRO-Objekten und Aufzählungstypen definiert. -->
+   <!-- [...] -->
+</xsd:schema>

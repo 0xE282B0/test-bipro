@@ -1,0 +1,9 @@
+<jaxb:bindings version="2.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/jaxb/bindingschema_2_0.xsd">
+
+	<jaxb:bindings>
+		<!-- We want JAXBElements, switch generateElementProperty to true -->
+		<jaxb:globalBindings generateElementProperty="false" />
+	</jaxb:bindings>
+</jaxb:bindings>

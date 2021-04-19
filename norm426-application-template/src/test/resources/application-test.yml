@@ -1,0 +1,19 @@
+spring:
+  banner:
+    location: classpath:/Banner.txt
+
+biproadapter:
+  provider:
+    common:
+      genericstandardadapter:
+        wsdl:
+          schemaLocationUrl: "http://example.com/soap-api/GewerbeService_2.7.0.1.0"
+          externalStsUrl: "http://example.com/soap-api/SecurityTokenService_2.7.0.1.0"
+        authentication:
+          required: false
+        cryption:
+          jks:
+            enabled: no
+        signature:
+          jks:
+            enabled: no

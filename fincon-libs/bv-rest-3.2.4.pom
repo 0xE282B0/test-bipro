@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>eu.fincon.benutzerverwaltung</groupId>
+    <artifactId>bv-rest</artifactId>
+    <version>3.2.4</version>
+    <packaging>pom</packaging>
+
+    <name>bv-rest</name>
+    <description>Benutzerverwaltung REST-Services</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.15.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
+
+    <modules>
+        <module>bv-rest-client-openapi-feign</module>
+        <module>bv-rest-server-openapi-reactive</module>
+        <module>bv-rest-server</module>
+
+        <!--  Zur Zeit kann Jenkins (http://mfchhsrvbuild01/jenkins) Docker-Images nicht bauen-->
+        <!--        <module>bv-rest-server-docker</module>-->
+    </modules>
+
+
+    <properties>
+
+        <java.version>1.8</java.version>
+        <sourceEncoding>UTF-8</sourceEncoding>
+
+        <!-- generate sources -->
+        <bv.rest.server>eu.fincon.bv.codegen.server</bv.rest.server>
+        <bv.rest.client>eu.fincon.bv.codegen.client</bv.rest.client>
+
+        <!-- group ids -->
+        <bv.groupid>eu.fincon.benutzerverwaltung</bv.groupid>
+
+        <!-- artifact ids -->
+        <bv.rest.server.artifactid>bv-rest-server</bv.rest.server.artifactid>
+        <bv.database.artifactid>bv-database</bv.database.artifactid>
+
+        <!-- library versions  -->
+        <io.springfox.version>3.0.0</io.springfox.version>
+
+        <io.swagger.core.v3.version>2.0.8</io.swagger.core.v3.version>
+        <io.swagger.annotations.version>1.5.22</io.swagger.annotations.version>
+
+        <org.openapitools.jackson.databind.nullable.version>0.2.1</org.openapitools.jackson.databind.nullable.version>
+        <com.fasterxml.jackson.dataformat.version>2.10.4</com.fasterxml.jackson.dataformat.version>
+
+        <commons.math3.version>3.6.1</commons.math3.version>
+        <commons.lang3.version>3.11</commons.lang3.version>
+        <commons.collections4.version>4.4</commons.collections4.version>
+
+        <org.junit.jupiter.version>5.5.1</org.junit.jupiter.version>
+        <org.junit.platform.version>1.5.1</org.junit.platform.version>
+        <org.mockito.version>3.0.0</org.mockito.version>
+        <assertj.core.version>3.12.2</assertj.core.version>
+
+        <h2.version>1.4.199</h2.version>
+        <!-- Maven Plugin   -->
+        <openapi-generator-maven-plugin.version>4.0.0</openapi-generator-maven-plugin.version>
+        <versions.maven.plugin.version>2.7</versions.maven.plugin.version>
+        <maven.enforcer.plugin.version>3.0.0-M2</maven.enforcer.plugin.version>
+
+
+    </properties>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${maven.enforcer.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>3.0</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>${versions.maven.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <site>
+            <id>stagingSite</id>
+            <url>scp://mfchhsrvas01/var/www/maven-site/benutzerverwaltung/${project.artifactId}</url>
+        </site>
+
+        <repository>
+            <id>clife02.c1-group.dom</id>
+            <name>clife02.c1-group.dom-releases</name>
+            <url>http://clife02:8081/artifactory/libs-releases-local</url>
+        </repository>
+
+        <snapshotRepository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>clife02.c1-group.dom</id>
+            <name>clife02.c1-group.dom-snapshots</name>
+            <url>http://clife02:8081/artifactory/libs-snapshots-local</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+
+    <profiles>
+        <!-- Profile for pushing artifacts: -->
+        <profile>
+            <id>local</id>
+            <properties>
+                <fincon.docker.registry.pull>${docker.registry}</fincon.docker.registry.pull>
+                <registry.url />
+            </properties>
+
+            <repositories>
+            </repositories>
+            <pluginRepositories>
+            </pluginRepositories>
+        </profile>
+
+        <!-- Don't use this local -->
+        <profile>
+            <id>jenkins</id>
+            <properties>
+                <fincon.docker.registry.push>${docker.registry}</fincon.docker.registry.push>
+                <fincon.docker.registry.pull>${docker.registry}</fincon.docker.registry.pull>
+                <registry.url>${docker.registry}/</registry.url>
+            </properties>
+            <distributionManagement>
+                <repository>
+                    <id>maven-releases</id>
+                    <name>maven-releases</name>
+                    <url>https://fcu-hh-nexus:8443/repository/maven-releases/</url>
+                </repository>
+                <snapshotRepository>
+                    <uniqueVersion>false</uniqueVersion>
+                    <id>maven-snapshots</id>
+                    <name>maven-snapshots</name>
+                    <url>https://fcu-hh-nexus:8443/repository/maven-snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
+            <repositories>
+
+            </repositories>
+            <pluginRepositories>
+            </pluginRepositories>
+
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,11 @@
+apiVersion: v1
+name: bipro-adapter
+version: 0.1.0
+appVersion: 0.1.0
+description: Deploy BiPro Adapter
+source:
+  - https://github.com/syncier/bipro-adapter
+maintainer:
+  - name: Priyanka Goel
+    email: priyanka.goel@alvary.io
+icon: https://demo.grnry.io/ui/grnry.png

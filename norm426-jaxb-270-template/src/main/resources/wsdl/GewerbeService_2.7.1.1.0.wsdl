@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:nachr="http://www.bipro.net/namespace/nachrichten"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+                  xmlns:wsu200207="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  xmlns:tarif="http://www.bipro.net/namespace/versicherung/tarifierung"
+                  xmlns:bipro="http://www.bipro.net/namespace"
+                  xmlns:allg="http://www.bipro.net/namespace/allgemein"
+                  targetNamespace="http://www.bipro.net/namespace"
+                  bipro:Name="GewerbeService_2.7.1.1.0.wsdl"
+                  bipro:Version="2.7.1.1.0">
+   <wsdl:types>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns="http://www.w3.org/2001/XMLSchema"
+                  targetNamespace="http://www.bipro.net/namespace"
+                  attributeFormDefault="qualified"
+                  elementFormDefault="qualified">
+         <xsd:include schemaLocation="GewerbeService_2.7.1.1.0.xsd"/>
+      </xsd:schema>
+   </wsdl:types>
+   <wsdl:message name="getQuoteQuestionsRequest">
+      <wsdl:part name="parameters" element="tarif:getQuoteQuestions"/>
+   </wsdl:message>
+   <wsdl:message name="getQuoteQuestionsResponse">
+      <wsdl:part name="parameters" element="tarif:getQuoteQuestionsResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getQuoteRequest">
+      <wsdl:part name="parameters" element="tarif:getQuote"/>
+   </wsdl:message>
+   <wsdl:message name="getQuoteResponse">
+      <wsdl:part name="parameters" element="tarif:getQuoteResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getOfferQuestionsRequest">
+      <wsdl:part name="parameters" element="tarif:getOfferQuestions"/>
+   </wsdl:message>
+   <wsdl:message name="getOfferQuestionsResponse">
+      <wsdl:part name="parameters" element="tarif:getOfferQuestionsResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getOfferRequest">
+      <wsdl:part name="parameters" element="tarif:getOffer"/>
+   </wsdl:message>
+   <wsdl:message name="getOfferResponse">
+      <wsdl:part name="parameters" element="tarif:getOfferResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getOrderQuestionsRequest">
+      <wsdl:part name="parameters" element="tarif:getOrderQuestions"/>
+   </wsdl:message>
+   <wsdl:message name="getOrderQuestionsResponse">
+      <wsdl:part name="parameters" element="tarif:getOrderQuestionsResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getOrderRequest">
+      <wsdl:part name="parameters" element="tarif:getOrder"/>
+   </wsdl:message>
+   <wsdl:message name="getOrderResponse">
+      <wsdl:part name="parameters" element="tarif:getOrderResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getOrderQualifiedRequest">
+      <wsdl:part name="parameters" element="tarif:getOrderQualified"/>
+   </wsdl:message>
+   <wsdl:message name="getOrderQualifiedResponse">
+      <wsdl:part name="parameters" element="tarif:getOrderQualifiedResponse"/>
+   </wsdl:message>
+   <wsdl:message name="setOrderRequest">
+      <wsdl:part name="parameters" element="tarif:setOrder"/>
+   </wsdl:message>
+   <wsdl:message name="setOrderResponse">
+      <wsdl:part name="parameters" element="tarif:setOrderResponse"/>
+   </wsdl:message>
+   <wsdl:message name="setOrderQualifiedRequest">
+      <wsdl:part name="parameters" element="tarif:setOrderQualified"/>
+   </wsdl:message>
+   <wsdl:message name="setOrderQualifiedResponse">
+      <wsdl:part name="parameters" element="tarif:setOrderQualifiedResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getFileRequest">
+      <wsdl:part name="parameters" element="allg:getFile"/>
+   </wsdl:message>
+   <wsdl:message name="getFileResponse">
+      <wsdl:part name="parameters" element="allg:getFileResponse"/>
+   </wsdl:message>
+   <wsdl:message name="BiproException">
+      <wsdl:part name="parameters" element="nachr:BiproException"/>
+   </wsdl:message>
+   <wsdl:portType name="GewerbeServicePortType">
+      <wsdl:operation name="getQuoteQuestions" parameterOrder="parameters">
+         <wsdl:documentation>Ermittlung / Beantwortung von Risikofragen für die Tarifierung</wsdl:documentation>
+         <wsdl:input name="getQuoteQuestionsRequest" message="bipro:getQuoteQuestionsRequest"/>
+         <wsdl:output name="getQuoteQuestionsResponse" message="bipro:getQuoteQuestionsResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getQuote" parameterOrder="parameters">
+         <wsdl:documentation>Ermittlung eines Tarifierungsergebnisses</wsdl:documentation>
+         <wsdl:input name="getQuoteRequest" message="bipro:getQuoteRequest"/>
+         <wsdl:output name="getQuoteResponse" message="bipro:getQuoteResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getOfferQuestions" parameterOrder="parameters">
+         <wsdl:documentation>Ermittlung / Beantwortung von Risikofragen für die Vorschlagsanforderung</wsdl:documentation>
+         <wsdl:input name="getOfferQuestionsRequest" message="bipro:getOfferQuestionsRequest"/>
+         <wsdl:output name="getOfferQuestionsResponse" message="bipro:getOfferQuestionsResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getOffer" parameterOrder="parameters">
+         <wsdl:documentation>Anforderung eines Versicherungsvorschlages</wsdl:documentation>
+         <wsdl:input name="getOfferRequest" message="bipro:getOfferRequest"/>
+         <wsdl:output name="getOfferResponse" message="bipro:getOfferResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getOrderQuestions" parameterOrder="parameters">
+         <wsdl:documentation>Ermittlung / Beantwortung von Risikofragen für die Antragsanforderung</wsdl:documentation>
+         <wsdl:input name="getOrderQuestionsRequest" message="bipro:getOrderQuestionsRequest"/>
+         <wsdl:output name="getOrderQuestionsResponse" message="bipro:getOrderQuestionsResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getOrder" parameterOrder="parameters">
+         <wsdl:documentation>Antragsanforderung eines Versicherungsantrages bzw. einer Angebotsanforderung (Invitatiomodell) mit unvollständigen Daten</wsdl:documentation>
+         <wsdl:input name="getOrderRequest" message="bipro:getOrderRequest"/>
+         <wsdl:output name="getOrderResponse" message="bipro:getOrderResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getOrderQualified" parameterOrder="parameters">
+         <wsdl:documentation>Anforderung eines Versicherungsantrages bzw. einer Angebotsanforderung (Invitatiomodell) mit vollständigen Daten</wsdl:documentation>
+         <wsdl:input name="getOrderQualifiedRequest" message="bipro:getOrderQualifiedRequest"/>
+         <wsdl:output name="getOrderQualifiedResponse" message="bipro:getOrderQualifiedResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="setOrder" parameterOrder="parameters">
+         <wsdl:documentation>Einreichen eines Versicherungsantrages bzw. einer Angebotsanforderung (Invitatiomodell) mit unvollständigen Daten</wsdl:documentation>
+         <wsdl:input name="setOrderRequest" message="bipro:setOrderRequest"/>
+         <wsdl:output name="setOrderResponse" message="bipro:setOrderResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="setOrderQualified" parameterOrder="parameters">
+         <wsdl:documentation>Einreichen eines Versicherungsantrages bzw. einer Angebotsanforderung (Invitatiomodell) mit vollständigen Daten</wsdl:documentation>
+         <wsdl:input name="setOrderQualifiedRequest" message="bipro:setOrderQualifiedRequest"/>
+         <wsdl:output name="setOrderQualifiedResponse" message="bipro:setOrderQualifiedResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+      <wsdl:operation name="getFile" parameterOrder="parameters">
+         <wsdl:documentation>Download bereitgestellter PDF-Dokumente nach dem Einreichen eines Versicherungsantrages bzw. einer Angebotsanforderung</wsdl:documentation>
+         <wsdl:input name="getFileRequest" message="bipro:getFileRequest"/>
+         <wsdl:output name="getFileResponse" message="bipro:getFileResponse"/>
+         <wsdl:fault name="BiproException" message="bipro:BiproException"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:binding name="GewerbeServiceBinding" type="bipro:GewerbeServicePortType">
+      <soapbind:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+      <!-- Hier wird die Security Policy referenziert. -->
+      <!--<wsp:PolicyReference URI="#AuthSecurityPolicy"/> -->
+      <wsdl:operation name="getQuoteQuestions">
+         <soapbind:operation soapAction="urn:getQuoteQuestions" style="document"/>
+         <wsdl:input>
+            <!-- Hier wird die Policy festgelegt, welche die Request-Nachricht spezifiziert. -->
+          <!--  <wsp200212:PolicyReference URI="#BiPROgetQuotePolicy"/> -->
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getQuote">
+         <soapbind:operation soapAction="urn:getQuote" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getOfferQuestions">
+         <soapbind:operation soapAction="urn:getOfferQuestions" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getOffer">
+         <soapbind:operation soapAction="urn:getOffer" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getOrderQuestions">
+         <soapbind:operation soapAction="urn:getOrderQuestions" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getOrder">
+         <soapbind:operation soapAction="urn:getOrder" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getOrderQualified">
+         <soapbind:operation soapAction="urn:getOrderQualified" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="setOrder">
+         <soapbind:operation soapAction="urn:setOrder" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="setOrderQualified">
+         <soapbind:operation soapAction="urn:setOrderQualified" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      <wsdl:operation name="getFile">
+         <soapbind:operation soapAction="urn:getFile" style="document"/>
+         <wsdl:input>
+            <soapbind:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soapbind:body use="literal"/>
+         </wsdl:output>
+         <wsdl:fault name="BiproException">
+            <soapbind:fault name="BiproException" use="literal"/>
+         </wsdl:fault>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:service name="GewerbeService_2.7.1.1.0">
+      <wsdl:documentation>Service für die Steuerung der Teilprozesse Tarifierung, Angebot / Vorschlag und Antrag (TAA)</wsdl:documentation>
+      <wsdl:port name="GewerbeService" binding="bipro:GewerbeServiceBinding">
+         <soapbind:address location="https://localhost:8080/services/GewerbeService_2.7.1.1.0"/>
+      </wsdl:port>
+   </wsdl:service>
+
+</wsdl:definitions>

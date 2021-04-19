@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: "{{ template bipro-adapter.fullname .}}"
+  labels:
+    app: "{{ template bipro-adapter.fullname .}}"
+spec:
+  type: LoadBalancer
+  selector:
+    app: "{{ template bipro-adapter.fullname . }}"
+  ports:
+    - protocol: TCP
+      name: http
+      port: {{ .Values.service.externalPort }}
+      targetPort: {{ .Values.service.internalPort }}

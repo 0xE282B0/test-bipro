@@ -1,0 +1,43 @@
+### Default values for harvester-api
+deploymentApiVersion: apps/v1
+
+## General
+fullnameOverride: ""
+replicaCount: 1
+
+## Deployment
+image: hub.syncier.cloud/grnry/biPro-adapter
+imageTag: "{{ .Chart.AppVersion }}"
+imagePullPolicy: Always
+imagePullSecrets: 
+  - "grnry-dockerregistry-credentials"
+
+## Service
+service:
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 8080
+  annotations: {}
+
+
+filters:
+  trustedHosts: []
+#    - example.com
+#    - example2.com
+resources: 
+  limits:
+    cpu: 250m
+    memory: 1Gi
+  requests:
+    cpu: 100m
+    memory: 512Mi
+javaOpts: -Xmx1024m -Xms512m #-agentlib:jdwp=transport=dt_socket,server=y,address=6006,suspend=n
+springProfile: "PROD"
+tolerations: []
+affinity: {}
+nodeSelector: {}
+securityContext: {}
+podDisruptionBudget:
+  enabled: false
+  minAvailable: 1
+  #maxUnavailable : 1

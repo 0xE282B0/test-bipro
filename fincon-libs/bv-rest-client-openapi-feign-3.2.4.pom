@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bv-rest</artifactId>
+        <groupId>eu.fincon.benutzerverwaltung</groupId>
+        <version>3.2.4</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bv-rest-client-openapi-feign</artifactId>
+    <description>Benutzerverwaltung REST client OpenAPI</description>
+
+    <properties>
+        <spring.cloud.starter.openfeign.version>2.1.5.RELEASE</spring.cloud.starter.openfeign.version>
+        <org.apache.oltu.oauth2.version>1.0.2</org.apache.oltu.oauth2.version>
+        <io.github.openfeign.version>10.2.3</io.github.openfeign.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Rest   -->
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>${io.swagger.annotations.version}</version>
+        </dependency>
+
+        <!-- openfeign   -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>${spring.cloud.starter.openfeign.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.oltu.oauth2</groupId>
+            <artifactId>org.apache.oltu.oauth2.client</artifactId>
+            <version>${org.apache.oltu.oauth2.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.github.openfeign</groupId>
+                    <artifactId>feign-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-jackson</artifactId>
+            <version>${io.github.openfeign.version}</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>${openapi-generator-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+
+                            <generatorName>java</generatorName>
+                            <library>feign</library>
+
+                            <inputSpec>${project.parent.basedir}/openapi/openapi.yaml</inputSpec>
+
+                            <skipValidateSpec>false</skipValidateSpec>
+                            <generateAliasAsModel>true</generateAliasAsModel>
+                            <!--                            <instantiationTypes>array=ArrayList,map=HashMap</instantiationTypes>-->
+
+                            <configOptions>
+                                <java8>true</java8>
+                                <dateLibrary>java8</dateLibrary>
+
+                                <apiPackage>${bv.rest.client}.api</apiPackage>
+                                <modelPackage>${bv.rest.client}.model</modelPackage>
+                                <invokerPackage>${bv.rest.client}.handler</invokerPackage>
+                                <booleanGetterPrefix>is</booleanGetterPrefix>
+                                <useBeanValidation>true</useBeanValidation>
+                                <performBeanValidatio>true</performBeanValidatio>
+                                <useGzipFeature>true</useGzipFeature>
+                            </configOptions>
+
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
