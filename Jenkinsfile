@@ -62,8 +62,6 @@ pipeline {
           script {
             withDockerd {
             sh """
-             // ./gradlew clean assemble dockerPrepare
-             // cp allianz_ca.der build/docker
              
              echo ' Before Executing Script #########'
              sh './fnstall-fincon-modules.sh'
