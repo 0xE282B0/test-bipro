@@ -17,5 +17,5 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile="./f
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile="./fincon-libs/bv-rest-client-openapi-feign-3.2.4.jar"              -DpomFile="./fincon-libs/bv-rest-client-openapi-feign-3.2.4.pom"
 
 # Build BiPRO-Standard-Adapter
-cd ${deliveryDirectory}
+cd ${deliveryDirectory}/norm426-aggregator-template
 mvn package
