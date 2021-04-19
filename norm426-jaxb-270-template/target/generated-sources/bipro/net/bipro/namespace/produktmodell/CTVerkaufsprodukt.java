@@ -61,17 +61,17 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
     "kennung",
     "produkt"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
 public class CTVerkaufsprodukt
     extends CTProduktbaustein
     implements Cloneable, CopyTo2, Equals2, HashCode2
 {
 
     @XmlElement(name = "Kennung")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected String kennung;
     @XmlElement(name = "Produkt", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected List<CTProdukt> produkt;
 
     /**
@@ -82,7 +82,7 @@ public class CTVerkaufsprodukt
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String getKennung() {
         return kennung;
     }
@@ -95,7 +95,7 @@ public class CTVerkaufsprodukt
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setKennung(String value) {
         this.kennung = value;
     }
@@ -122,7 +122,7 @@ public class CTVerkaufsprodukt
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public List<CTProdukt> getProdukt() {
         if (produkt == null) {
             produkt = new ArrayList<CTProdukt>();
@@ -136,12 +136,12 @@ public class CTVerkaufsprodukt
      * 
      */
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String toString() {
         return ToStringBuilder.reflectionToString(this, JAXBToStringStyle.DEFAULT_STYLE);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public boolean equals(ObjectLocator thisLocator, ObjectLocator thatLocator, Object object, EqualsStrategy2 strategy) {
         if ((object == null)||(this.getClass()!= object.getClass())) {
             return false;
@@ -174,13 +174,13 @@ public class CTVerkaufsprodukt
         return true;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public boolean equals(Object object) {
         final EqualsStrategy2 strategy = JAXBEqualsStrategy.INSTANCE;
         return equals(null, null, object, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public int hashCode(ObjectLocator locator, HashCodeStrategy2 strategy) {
         int currentHashCode = super.hashCode(locator, strategy);
         {
@@ -196,24 +196,24 @@ public class CTVerkaufsprodukt
         return currentHashCode;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public int hashCode() {
         final HashCodeStrategy2 strategy = JAXBHashCodeStrategy.INSTANCE;
         return this.hashCode(null, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object clone() {
         return copyTo(createNewInstance());
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object copyTo(Object target) {
         final CopyStrategy2 strategy = JAXBCopyStrategy.INSTANCE;
         return copyTo(null, target, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object copyTo(ObjectLocator locator, Object target, CopyStrategy2 strategy) {
         final Object draftCopy = ((target == null)?createNewInstance():target);
         super.copyTo(locator, draftCopy, strategy);
@@ -254,18 +254,18 @@ public class CTVerkaufsprodukt
         return draftCopy;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object createNewInstance() {
         return new CTVerkaufsprodukt();
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withKennung(String value) {
         setKennung(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withProdukt(CTProdukt... values) {
         if (values!= null) {
             for (CTProdukt value: values) {
@@ -275,7 +275,7 @@ public class CTVerkaufsprodukt
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withProdukt(Collection<CTProdukt> values) {
         if (values!= null) {
             getProdukt().addAll(values);
@@ -284,14 +284,14 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withBezeichnung(String value) {
         setBezeichnung(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withGewuenschteZahlungsweise(STZahlungsweise... values) {
         if (values!= null) {
             for (STZahlungsweise value: values) {
@@ -302,7 +302,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withGewuenschteZahlungsweise(Collection<STZahlungsweise> values) {
         if (values!= null) {
             getGewuenschteZahlungsweise().addAll(values);
@@ -311,14 +311,14 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withKurzbeschreibung(String value) {
         setKurzbeschreibung(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withBedingungen(STEBedingungen... values) {
         if (values!= null) {
             for (STEBedingungen value: values) {
@@ -329,7 +329,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withBedingungen(Collection<STEBedingungen> values) {
         if (values!= null) {
             getBedingungen().addAll(values);
@@ -338,14 +338,14 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withUnternehmen(CTUnternehmen value) {
         setUnternehmen(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withKondition(CTKondition... values) {
         if (values!= null) {
             for (CTKondition value: values) {
@@ -356,7 +356,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withKondition(Collection<CTKondition> values) {
         if (values!= null) {
             getKondition().addAll(values);
@@ -365,7 +365,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withBeitrag(CTBeitrag... values) {
         if (values!= null) {
             for (CTBeitrag value: values) {
@@ -376,7 +376,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withBeitrag(Collection<CTBeitrag> values) {
         if (values!= null) {
             getBeitrag().addAll(values);
@@ -385,7 +385,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withZusaetzlicheProduktbausteinDaten(CTZusaetzlicheProduktbausteinDaten... values) {
         if (values!= null) {
             for (CTZusaetzlicheProduktbausteinDaten value: values) {
@@ -396,7 +396,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withZusaetzlicheProduktbausteinDaten(Collection<CTZusaetzlicheProduktbausteinDaten> values) {
         if (values!= null) {
             getZusaetzlicheProduktbausteinDaten().addAll(values);
@@ -405,14 +405,14 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withAenderungsdatum(String value) {
         setAenderungsdatum(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withAenderungsgrund(String... values) {
         if (values!= null) {
             for (String value: values) {
@@ -423,7 +423,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withAenderungsgrund(Collection<String> values) {
         if (values!= null) {
             getAenderungsgrund().addAll(values);
@@ -432,35 +432,35 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withVertragsform(STVertragsform value) {
         setVertragsform(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withAbgangsgrund(STAbgangsgrund value) {
         setAbgangsgrund(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withStatus(STVertragsstatus value) {
         setStatus(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withVertriebsname(String value) {
         setVertriebsname(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withStichtagswert(CTStichtagsbetrag... values) {
         if (values!= null) {
             for (CTStichtagsbetrag value: values) {
@@ -471,7 +471,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withStichtagswert(Collection<CTStichtagsbetrag> values) {
         if (values!= null) {
             getStichtagswert().addAll(values);
@@ -480,28 +480,28 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withBeitragszahler(CTBeitragszahler value) {
         setBeitragszahler(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withVersicherungsdauer(CTZeitraum value) {
         setVersicherungsdauer(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withZertifizierungsdaten(CTZertifizierungsdaten value) {
         setZertifizierungsdaten(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withErweiterung(CTErweiterung... values) {
         if (values!= null) {
             for (CTErweiterung value: values) {
@@ -512,7 +512,7 @@ public class CTVerkaufsprodukt
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVerkaufsprodukt withErweiterung(Collection<CTErweiterung> values) {
         if (values!= null) {
             getErweiterung().addAll(values);

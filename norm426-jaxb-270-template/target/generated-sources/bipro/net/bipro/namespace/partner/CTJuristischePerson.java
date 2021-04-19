@@ -77,7 +77,7 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
     "handelsregisteraktenzeichen",
     "mitarbeitergruppe"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
 public class CTJuristischePerson
     extends CTPartner
     implements Cloneable, CopyTo2, Equals2, HashCode2
@@ -85,40 +85,40 @@ public class CTJuristischePerson
 
     @XmlElement(name = "Rechtsform")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected STRechtsform rechtsform;
     @XmlElement(name = "Steuernummer")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected String steuernummer;
     @XmlElement(name = "Gruendungsdatum")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected String gruendungsdatum;
     @XmlElement(name = "Branche")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected STEBerufsBranche branche;
     @XmlElement(name = "AnzahlMitglieder")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected Integer anzahlMitglieder;
     @XmlElement(name = "Vertretungsberechtigter")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected CTVertretungsberechtigter vertretungsberechtigter;
     @XmlElement(name = "Umsatz")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected CTUmsatz umsatz;
     @XmlElement(name = "AnzahlBeschaeftigte")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected List<CTAnzahlBeschaeftigte> anzahlBeschaeftigte;
     @XmlElement(name = "Lohnsumme")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected CTLohnsumme lohnsumme;
     @XmlElement(name = "Handelsregistergericht")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected String handelsregistergericht;
     @XmlElement(name = "Handelsregisteraktenzeichen")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected String handelsregisteraktenzeichen;
     @XmlElement(name = "Mitarbeitergruppe")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     protected List<CTMitarbeitergruppe> mitarbeitergruppe;
 
     /**
@@ -129,7 +129,7 @@ public class CTJuristischePerson
      *     {@link STRechtsform }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public STRechtsform getRechtsform() {
         return rechtsform;
     }
@@ -142,7 +142,7 @@ public class CTJuristischePerson
      *     {@link STRechtsform }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setRechtsform(STRechtsform value) {
         this.rechtsform = value;
     }
@@ -155,7 +155,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String getSteuernummer() {
         return steuernummer;
     }
@@ -168,7 +168,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setSteuernummer(String value) {
         this.steuernummer = value;
     }
@@ -181,7 +181,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String getGruendungsdatum() {
         return gruendungsdatum;
     }
@@ -194,7 +194,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setGruendungsdatum(String value) {
         this.gruendungsdatum = value;
     }
@@ -207,7 +207,7 @@ public class CTJuristischePerson
      *     {@link STEBerufsBranche }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public STEBerufsBranche getBranche() {
         return branche;
     }
@@ -220,7 +220,7 @@ public class CTJuristischePerson
      *     {@link STEBerufsBranche }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setBranche(STEBerufsBranche value) {
         this.branche = value;
     }
@@ -233,7 +233,7 @@ public class CTJuristischePerson
      *     {@link Integer }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Integer getAnzahlMitglieder() {
         return anzahlMitglieder;
     }
@@ -246,7 +246,7 @@ public class CTJuristischePerson
      *     {@link Integer }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setAnzahlMitglieder(Integer value) {
         this.anzahlMitglieder = value;
     }
@@ -259,7 +259,7 @@ public class CTJuristischePerson
      *     {@link CTVertretungsberechtigter }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTVertretungsberechtigter getVertretungsberechtigter() {
         return vertretungsberechtigter;
     }
@@ -272,7 +272,7 @@ public class CTJuristischePerson
      *     {@link CTVertretungsberechtigter }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setVertretungsberechtigter(CTVertretungsberechtigter value) {
         this.vertretungsberechtigter = value;
     }
@@ -285,7 +285,7 @@ public class CTJuristischePerson
      *     {@link CTUmsatz }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTUmsatz getUmsatz() {
         return umsatz;
     }
@@ -298,7 +298,7 @@ public class CTJuristischePerson
      *     {@link CTUmsatz }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setUmsatz(CTUmsatz value) {
         this.umsatz = value;
     }
@@ -325,7 +325,7 @@ public class CTJuristischePerson
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public List<CTAnzahlBeschaeftigte> getAnzahlBeschaeftigte() {
         if (anzahlBeschaeftigte == null) {
             anzahlBeschaeftigte = new ArrayList<CTAnzahlBeschaeftigte>();
@@ -341,7 +341,7 @@ public class CTJuristischePerson
      *     {@link CTLohnsumme }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTLohnsumme getLohnsumme() {
         return lohnsumme;
     }
@@ -354,7 +354,7 @@ public class CTJuristischePerson
      *     {@link CTLohnsumme }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setLohnsumme(CTLohnsumme value) {
         this.lohnsumme = value;
     }
@@ -367,7 +367,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String getHandelsregistergericht() {
         return handelsregistergericht;
     }
@@ -380,7 +380,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setHandelsregistergericht(String value) {
         this.handelsregistergericht = value;
     }
@@ -393,7 +393,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String getHandelsregisteraktenzeichen() {
         return handelsregisteraktenzeichen;
     }
@@ -406,7 +406,7 @@ public class CTJuristischePerson
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public void setHandelsregisteraktenzeichen(String value) {
         this.handelsregisteraktenzeichen = value;
     }
@@ -433,7 +433,7 @@ public class CTJuristischePerson
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public List<CTMitarbeitergruppe> getMitarbeitergruppe() {
         if (mitarbeitergruppe == null) {
             mitarbeitergruppe = new ArrayList<CTMitarbeitergruppe>();
@@ -447,12 +447,12 @@ public class CTJuristischePerson
      * 
      */
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public String toString() {
         return ToStringBuilder.reflectionToString(this, JAXBToStringStyle.DEFAULT_STYLE);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public boolean equals(ObjectLocator thisLocator, ObjectLocator thatLocator, Object object, EqualsStrategy2 strategy) {
         if ((object == null)||(this.getClass()!= object.getClass())) {
             return false;
@@ -575,13 +575,13 @@ public class CTJuristischePerson
         return true;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public boolean equals(Object object) {
         final EqualsStrategy2 strategy = JAXBEqualsStrategy.INSTANCE;
         return equals(null, null, object, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public int hashCode(ObjectLocator locator, HashCodeStrategy2 strategy) {
         int currentHashCode = super.hashCode(locator, strategy);
         {
@@ -647,24 +647,24 @@ public class CTJuristischePerson
         return currentHashCode;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public int hashCode() {
         final HashCodeStrategy2 strategy = JAXBHashCodeStrategy.INSTANCE;
         return this.hashCode(null, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object clone() {
         return copyTo(createNewInstance());
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object copyTo(Object target) {
         final CopyStrategy2 strategy = JAXBCopyStrategy.INSTANCE;
         return copyTo(null, target, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object copyTo(ObjectLocator locator, Object target, CopyStrategy2 strategy) {
         final Object draftCopy = ((target == null)?createNewInstance():target);
         super.copyTo(locator, draftCopy, strategy);
@@ -840,54 +840,54 @@ public class CTJuristischePerson
         return draftCopy;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public Object createNewInstance() {
         return new CTJuristischePerson();
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withRechtsform(STRechtsform value) {
         setRechtsform(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withSteuernummer(String value) {
         setSteuernummer(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withGruendungsdatum(String value) {
         setGruendungsdatum(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withBranche(STEBerufsBranche value) {
         setBranche(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAnzahlMitglieder(Integer value) {
         setAnzahlMitglieder(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withVertretungsberechtigter(CTVertretungsberechtigter value) {
         setVertretungsberechtigter(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withUmsatz(CTUmsatz value) {
         setUmsatz(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAnzahlBeschaeftigte(CTAnzahlBeschaeftigte... values) {
         if (values!= null) {
             for (CTAnzahlBeschaeftigte value: values) {
@@ -897,7 +897,7 @@ public class CTJuristischePerson
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAnzahlBeschaeftigte(Collection<CTAnzahlBeschaeftigte> values) {
         if (values!= null) {
             getAnzahlBeschaeftigte().addAll(values);
@@ -905,25 +905,25 @@ public class CTJuristischePerson
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withLohnsumme(CTLohnsumme value) {
         setLohnsumme(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withHandelsregistergericht(String value) {
         setHandelsregistergericht(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withHandelsregisteraktenzeichen(String value) {
         setHandelsregisteraktenzeichen(value);
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withMitarbeitergruppe(CTMitarbeitergruppe... values) {
         if (values!= null) {
             for (CTMitarbeitergruppe value: values) {
@@ -933,7 +933,7 @@ public class CTJuristischePerson
         return this;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withMitarbeitergruppe(Collection<CTMitarbeitergruppe> values) {
         if (values!= null) {
             getMitarbeitergruppe().addAll(values);
@@ -942,63 +942,63 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAnrede(STAnredeschluessel value) {
         setAnrede(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withName(String value) {
         setName(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withNamenszusatz1(String value) {
         setNamenszusatz1(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withNamenszusatz2(String value) {
         setNamenszusatz2(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnernummerVM(String value) {
         setPartnernummerVM(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnernummer(String value) {
         setPartnernummer(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withVorsteuerabzugsberechtigt(Boolean value) {
         setVorsteuerabzugsberechtigt(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnerID(String value) {
         setPartnerID(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAnschrift(CTPartneranschrift... values) {
         if (values!= null) {
             for (CTPartneranschrift value: values) {
@@ -1009,7 +1009,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAnschrift(Collection<CTPartneranschrift> values) {
         if (values!= null) {
             getAnschrift().addAll(values);
@@ -1018,7 +1018,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withZusaetzlichePartnerdaten(CTZusaetzlichePartnerdaten... values) {
         if (values!= null) {
             for (CTZusaetzlichePartnerdaten value: values) {
@@ -1029,7 +1029,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withZusaetzlichePartnerdaten(Collection<CTZusaetzlichePartnerdaten> values) {
         if (values!= null) {
             getZusaetzlichePartnerdaten().addAll(values);
@@ -1038,7 +1038,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withKommunikationsverbindung(CTKommunikationsverbindung... values) {
         if (values!= null) {
             for (CTKommunikationsverbindung value: values) {
@@ -1049,7 +1049,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withKommunikationsverbindung(Collection<CTKommunikationsverbindung> values) {
         if (values!= null) {
             getKommunikationsverbindung().addAll(values);
@@ -1058,7 +1058,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withBankverbindung(CTBankverbindungBasis... values) {
         if (values!= null) {
             for (CTBankverbindungBasis value: values) {
@@ -1069,7 +1069,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withBankverbindung(Collection<CTBankverbindungBasis> values) {
         if (values!= null) {
             getBankverbindung().addAll(values);
@@ -1078,7 +1078,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withHandeltAufRechnungVon(CTHandeltAufRechnungVon... values) {
         if (values!= null) {
             for (CTHandeltAufRechnungVon value: values) {
@@ -1089,7 +1089,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withHandeltAufRechnungVon(Collection<CTHandeltAufRechnungVon> values) {
         if (values!= null) {
             getHandeltAufRechnungVon().addAll(values);
@@ -1098,7 +1098,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withGruppenvertragspartner(CTGruppenvertragspartner... values) {
         if (values!= null) {
             for (CTGruppenvertragspartner value: values) {
@@ -1109,7 +1109,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withGruppenvertragspartner(Collection<CTGruppenvertragspartner> values) {
         if (values!= null) {
             getGruppenvertragspartner().addAll(values);
@@ -1118,7 +1118,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnerbeziehung(CTPartnerbeziehung... values) {
         if (values!= null) {
             for (CTPartnerbeziehung value: values) {
@@ -1129,7 +1129,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnerbeziehung(Collection<CTPartnerbeziehung> values) {
         if (values!= null) {
             getPartnerbeziehung().addAll(values);
@@ -1138,14 +1138,14 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withVertrauensperson(CTVertrauensperson value) {
         setVertrauensperson(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withKreditkarte(CTKreditkarte... values) {
         if (values!= null) {
             for (CTKreditkarte value: values) {
@@ -1156,7 +1156,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withKreditkarte(Collection<CTKreditkarte> values) {
         if (values!= null) {
             getKreditkarte().addAll(values);
@@ -1165,28 +1165,28 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withUmsatzsteuerIdentifikationsnummer(String value) {
         setUmsatzsteuerIdentifikationsnummer(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withAltePartnernummer(String value) {
         setAltePartnernummer(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withBesteuerung(CTBesteuerung value) {
         setBesteuerung(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withDirektmarketing(CTWerbeerlaubnis... values) {
         if (values!= null) {
             for (CTWerbeerlaubnis value: values) {
@@ -1197,7 +1197,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withDirektmarketing(Collection<CTWerbeerlaubnis> values) {
         if (values!= null) {
             getDirektmarketing().addAll(values);
@@ -1206,35 +1206,35 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withFinanzamt(String value) {
         setFinanzamt(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartneranmerkung(String value) {
         setPartneranmerkung(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withBriefanrede(String value) {
         setBriefanrede(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withKommunikationspartner(CTKommunikationspartner value) {
         setKommunikationspartner(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnernummerExtern(CTPartnernummer... values) {
         if (values!= null) {
             for (CTPartnernummer value: values) {
@@ -1245,7 +1245,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withPartnernummerExtern(Collection<CTPartnernummer> values) {
         if (values!= null) {
             getPartnernummerExtern().addAll(values);
@@ -1254,14 +1254,14 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withVollmachtgeber(CTVollmachtgeber value) {
         setVollmachtgeber(value);
         return this;
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withErweiterung(CTErweiterung... values) {
         if (values!= null) {
             for (CTErweiterung value: values) {
@@ -1272,7 +1272,7 @@ public class CTJuristischePerson
     }
 
     @Override
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-03-19T04:27:26+01:00", comments = "JAXB RI v2.3.2")
+    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-04-19T05:38:04+02:00", comments = "JAXB RI v2.3.2")
     public CTJuristischePerson withErweiterung(Collection<CTErweiterung> values) {
         if (values!= null) {
             getErweiterung().addAll(values);

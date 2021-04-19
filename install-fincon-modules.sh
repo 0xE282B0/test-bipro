@@ -5,7 +5,8 @@ deliveryDirectory="$(dirname "$BASH_SOURCE")"
 # Install FINCON modules
 
 cd ${deliveryDirectory}
-echo ${deliveryDirectory}
+echo -e $"hello\nworld" 
+echo -e ${deliveryDirectory}
 
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile="./fincon-libs/bipro-adapter-parent-3.4.3.1-SNAPSHOT.pom"          -DpomFile="./fincon-libs/bipro-adapter-parent-3.4.3.1-SNAPSHOT.pom"
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile="./fincon-libs/generic-api-3.4.3.1-SNAPSHOT.jar"                   -DpomFile="./fincon-libs/generic-api-3.4.3.1-SNAPSHOT.pom"                     -Djavadoc="./fincon-libs/generic-api-3.4.3.1-SNAPSHOT-javadoc.jar"

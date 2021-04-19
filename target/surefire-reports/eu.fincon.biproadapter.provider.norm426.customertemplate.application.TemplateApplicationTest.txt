@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: eu.fincon.biproadapter.provider.norm426.customertemplate.application.TemplateApplicationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.471 s - in eu.fincon.biproadapter.provider.norm426.customertemplate.application.TemplateApplicationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.454 s - in eu.fincon.biproadapter.provider.norm426.customertemplate.application.TemplateApplicationTest
