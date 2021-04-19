@@ -6,7 +6,7 @@
         <groupId>eu.fincon.biproadapter.provider</groupId>
         <artifactId>norm426-parent-template</artifactId>
         <version>3.4.3.1-SNAPSHOT</version>
-        <relativePath>../norm426-parent-template</relativePath>
+        <relativePath>norm426-parent-template</relativePath>
     </parent>
 
     <artifactId>norm426-application-template</artifactId>
