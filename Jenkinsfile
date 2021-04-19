@@ -66,7 +66,7 @@ pipeline {
              echo ' Before Executing Script #########'
              ls
                     
-              sh 'install-fincon-modules.sh'
+             
              
              echo 'First Deployment Ever #########'
              mvn clean compile install
