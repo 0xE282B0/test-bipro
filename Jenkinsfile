@@ -17,7 +17,7 @@ pipeline {
 //ARTIFACTORY_URL = "https://artifactory.syncier.cloud/artifactory/analytics-maven-snapshot-local/"
   }
 
-//  stages {
+  stages {
 //    stage('Test branch') {
 //      steps {
 //        container('builder') {
