@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  eu.fincon.biproadapter.provider.norm426.customertemplate.mapping.TemplateNorm426MappingConfiguration

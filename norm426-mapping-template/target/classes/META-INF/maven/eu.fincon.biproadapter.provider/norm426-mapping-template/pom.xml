@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>eu.fincon.biproadapter.provider</groupId>
+		<artifactId>norm426-parent-template</artifactId>
+		<version>3.4.3.1-SNAPSHOT</version>
+		<relativePath>../norm426-parent-template</relativePath>
+	</parent>
+
+	<artifactId>norm426-mapping-template</artifactId>
+	<packaging>jar</packaging>
+
+	<dependencies>
+
+		<!-- Fincon modules -->
+
+		<dependency>
+			<groupId>eu.fincon.biproadapter.provider</groupId>
+			<artifactId>norm426-mapping-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>eu.fincon.biproadapter.provider</groupId>
+			<artifactId>norm426-jaxb-270-template</artifactId>
+		</dependency>
+
+		<!-- Other dependencies -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+		<!-- Test dependencies -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20140107</version>
+		</dependency>
+
+
+	</dependencies>
+</project>

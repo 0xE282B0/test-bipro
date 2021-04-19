@@ -1,0 +1,9 @@
+spring:
+  banner:
+    location: classpath:/Banner.txt
+biproadapter:
+  provider:
+    common:
+      genericstandardadapter:
+        bipro:
+          version: "2.7.0.1.0"
