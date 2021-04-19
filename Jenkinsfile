@@ -17,21 +17,21 @@ pipeline {
 //ARTIFACTORY_URL = "https://artifactory.syncier.cloud/artifactory/analytics-maven-snapshot-local/"
   }
 
-  stages {
-    stage('Test branch') {
-      steps {
-        container('builder') {
-          script {
-            // helper that starts dockerd and configures the correct DockerServer for jenkins
-            withDockerd {
-              sh """
-              //  mvn test
-              """
-            }
-          }
-        }
-      }
-    }
+//  stages {
+//    stage('Test branch') {
+//      steps {
+//        container('builder') {
+//          script {
+//            // helper that starts dockerd and configures the correct DockerServer for jenkins
+//            withDockerd {
+//              sh """
+//              //  mvn test
+//              """
+//            }
+//          }
+//        }
+//      }
+//    }
 
     stage('Specify Version') {
       steps {
