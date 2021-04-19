@@ -66,10 +66,12 @@ pipeline {
              echo ' Before Executing Script #########'
              ls
               
-         
+         dir(norm426-application-template') {
+      sh 'mvn clean compile install'
+    }
              
              echo 'First Deployment Ever #########'
-             dir norm426-application-template
+             dir 'norm426-application-template'
              ls
              mvn clean compile install
                         
