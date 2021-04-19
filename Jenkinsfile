@@ -70,6 +70,7 @@ pipeline {
              
              echo 'First Deployment Ever #########'
              cd norm426-application-template
+             ls
              mvn clean compile install
                         
              
