@@ -66,7 +66,7 @@ pipeline {
              echo ' Before Executing Script #########'
              ls
               
-         dir(norm426-application-template') {
+         dir('norm426-application-template') {
       sh 'mvn clean compile install'
     }
              
