@@ -86,7 +86,7 @@ pipeline {
             // Return the chosen registry as "dockerRegistry"
             withRegistry.dockerAuto(v) { dockerRegistry ->
               // Explicity log in to the release docker registry to be able to pull the base image
-              withRegistry.dockerRelease {
+              withRegistry.dockerDevUsecases {
                 harvesterImage = docker.build("${dockerRegistry}/${TARGET_IMAGE_NAME}",
                 // Use the singleLine helper to condense the additional arguments argument into one singleLine
                     singleLine("""-f build/docker/Dockerfile build/docker
