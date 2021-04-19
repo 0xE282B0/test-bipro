@@ -25,7 +25,7 @@ pipeline {
             // helper that starts dockerd and configures the correct DockerServer for jenkins
             withDockerd {
               sh """
-                mvn test
+              //  mvn test
               """
             }
           }
