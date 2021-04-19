@@ -65,8 +65,14 @@ pipeline {
              // ./gradlew clean assemble dockerPrepare
              // cp allianz_ca.der build/docker
              
+             echo ' Before Executing Script #########'
              sh './fnstall-fincon-modules.sh'
+             
+             echo 'First Deployment Ever #########'
              mvn clean compile install
+                        
+             
+             echo 'After Maven Build #########'
              cd /docker-compose/development
              docker-compose up --build --force-recreate
              
