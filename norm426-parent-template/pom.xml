@@ -19,6 +19,20 @@
         <spring-boot.version>2.1.11.RELEASE</spring-boot.version>
 
     </properties>
+    
+    
+    <proxies>
+   <proxy>
+      <id>example-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.example.com</host>
+      <port>8080</port>
+      <username>proxyuser</username>
+      <password>somepassword</password>
+      <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
+    </proxy>
+  </proxies>
 
     <dependencyManagement>
         <dependencies>
