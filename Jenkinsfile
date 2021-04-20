@@ -6,14 +6,15 @@ pipeline {
       defaultContainer 'builder'
       yaml agentSpecs.assembleYaml([
         agentSpecs.defaultJavaContainerspec(name: "builder"),
-        agentSpecs.defaultHelmContainerspec(name: "helm"),
-        agentSpecs.whitesourceAgent(name: "wss-scanner")
+        agentSpecs.defaultHelmContainerspec(name: "helm")
 
       ])
     }
   }
   environment {
     TARGET_IMAGE_NAME = "bipro-adapter"
+    //DOCKER_HOST = 'tcp://localhost:2375'
+    //DOCKER_DRIVER = 'overlay2'
 //ARTIFACTORY_URL = "https://artifactory.syncier.cloud/artifactory/analytics-maven-snapshot-local/"
   }
 
@@ -65,6 +66,7 @@ pipeline {
              
              echo ' Before Executing Script #########'
              ls
+             sh 'install-fincon-modules.sh'
               
          dir('norm426-application-template') {
       sh 'mvn clean compile install'
